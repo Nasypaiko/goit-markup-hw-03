@@ -4,8 +4,32 @@
   --accent-color: #2196f3;
   --logo-color: #000000;
   --header-color: #ffffff;
-  --background-color: #F5F4FA;
+  --background-color: #f5f4fa;
   --basement-color: #2f303a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
 }
 
 body {
@@ -22,21 +46,42 @@ body {
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 /* Шапка сайта */
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: var(--header-color);
 }
 
@@ -45,6 +90,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   color: var(--logo-color);
+  margin-right: 93px;
 }
 
 .logo-style {
@@ -78,10 +124,21 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  gap: 50px;
+}
+
 /* Герой */
 
 .hero {
-  background-color: var(--basement-color);
+  background-image: url(../images/Img.jpg);
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -92,6 +149,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -103,12 +163,20 @@ body {
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: none;
 }
 
 /* Преимущества */
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
 
 .advantages-title {
   font-size: 14px;
@@ -116,6 +184,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-color);
+  margin-bottom: 20px;
+  width: 270px;
 }
 
 .advantages-text {
@@ -124,7 +194,17 @@ body {
   color: var(--secondary-color);
 }
 
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Виды работ */
+
+.projects-list {
+  display: flex;
+  gap: 30px;
+}
 
 .projects-title {
   font-size: 36px;
@@ -132,12 +212,19 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  margin-bottom: 50px;
 }
+
+/* .projects-pictures {
+  margin-bottom: 94px;
+} */
 
 /* Команда */
 
 .command {
   background-color: var(--background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .command-title {
@@ -146,6 +233,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  margin-bottom: 50px;
 }
 
 .command-people {
@@ -155,6 +243,8 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .command-position {
@@ -163,12 +253,36 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 30px;
+}
+
+.command-list {
+  display: flex;
+  gap: 30px;
+}
+
+.command-item {
+  background-color: #ffffff;
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* Футер */
 
+.logo-footer {
+  margin-bottom: 20px;
+}
+
+.adress-list {
+  margin-bottom: 9px;
+}
+
 .basement {
   background-color: var(--basement-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .basement-logo {
@@ -204,17 +318,29 @@ body {
 
 /* ------Portfolio.html------ */
 
+.projects-company {
+  border-top: 1px solid #eeeeee;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .projects-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
+  justify-content: center;
+  margin-bottom: 50px;
   color: var(--primary-color);
+  gap: 8px;
 }
 
 .btn-projects {
   cursor: pointer;
   background-color: var(--background-color);
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
 }
 
 .btn-projects:hover,
@@ -228,6 +354,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-color);
+  margin-bottom: 4px;
 }
 
 .team-image {
@@ -240,3 +367,18 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+
+.team-projects {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-container {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
