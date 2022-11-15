@@ -66,6 +66,12 @@ body {
   margin-left: auto;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Шапка сайта */
 
 .header-nav {
@@ -80,8 +86,6 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
   background-color: var(--header-color);
 }
 
@@ -103,6 +107,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .nav-link:hover,
@@ -117,6 +123,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav .contacts-link:hover,
@@ -132,6 +140,11 @@ body {
 .auth-nav {
   display: flex;
   gap: 50px;
+}
+
+.header-container {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* Герой */
@@ -215,9 +228,9 @@ body {
   margin-bottom: 50px;
 }
 
-/* .projects-pictures {
-  margin-bottom: 94px;
-} */
+.projects {
+  padding-bottom: 94px;
+}
 
 /* Команда */
 
@@ -276,7 +289,7 @@ body {
 }
 
 .adress-list {
-  margin-bottom: 9px;
+  margin-top: 9px;
 }
 
 .basement {
@@ -341,12 +354,15 @@ body {
   padding: 6px 22px;
   border-radius: 4px;
   border: none;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .btn-projects:hover,
 .btn-projects:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .team-title {
