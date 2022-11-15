@@ -214,12 +214,12 @@ img {
 
 /* Виды работ */
 
-.projects-list {
+.works-list {
   display: flex;
   gap: 30px;
 }
 
-.projects-title {
+.works-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
@@ -228,7 +228,7 @@ img {
   margin-bottom: 50px;
 }
 
-.projects {
+.works {
   padding-bottom: 94px;
 }
 
@@ -343,9 +343,10 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   justify-content: center;
-  margin-bottom: 50px;
   color: var(--primary-color);
+  display: flex;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .btn-projects {
@@ -356,6 +357,7 @@ img {
   border: none;
   font-style: normal;
   font-weight: 500;
+  line-height: 1.62;
 }
 
 .btn-projects:hover,
